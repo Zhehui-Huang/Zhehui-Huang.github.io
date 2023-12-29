@@ -23,10 +23,10 @@
               <p style="text-align:center">
                 <name>Zhehui Huang</name>
               </p>
-              <p>I am a second-year Computer Science Ph.D. Student at the <a href="https://robotics.usc.edu/resl/">Robotics Embedded Systems Laboratory (RESL)</a>, <a href="https://www.usc.edu/">University of Southern California</a>, where I am advised by Prof. <a href="https://viterbi.usc.edu/directory/faculty/Sukhatme/Gaurav">Gaurav Sukhatme</a> and working on deep reinforcement learning and robotics.
+              <p>I am a third-year Computer Science Ph.D. Student at the University of Southern California (USC), advised by Prof. <a href="https://viterbi.usc.edu/directory/faculty/Sukhatme/Gaurav">Gaurav Sukhatme</a>.
               </p>
               <p>
-                I received a master's degree in Computer Science from University of Southern California. I received a bachelor's degree in Computer Science from Harbin Institute of Technology.
+                Previously, I received a master's degree in Computer Science at USC. I completed my bachelor's degree in Computer Science at Harbin Institute of Technology.
               </p>
               <p style="text-align:center">
                 <a href="mailto:zhehuihu@usc.edu">Email</a> &nbsp|&nbsp
@@ -67,6 +67,14 @@
                 </tr>
                 <tr>
                   <td style="padding: 5px; width: 15% ;vertical-align: top;">
+                    <i>[Dec 2022]</i>
+                  </td>
+                  <td style="padding: 5px; width: 85% ;vertical-align: top;">
+                    Received $70,000 AWS cloud credit for research..
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding: 5px; width: 15% ;vertical-align: top;">
                     <i>[May 2022]</i>
                   </td>
                   <td style="padding: 5px; width: 85% ;vertical-align: top;">
@@ -80,6 +88,14 @@
                   <td style="padding: 5px; width: 85% ;vertical-align: top;">
                     <a href="https://arxiv.org/abs/2109.07735">One paper</a> got accepted to
                     <a href="https://openreview.net/forum?id=ofioIEZvJRG">CoRL 2021</a>.
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding: 5px; width: 15% ;vertical-align: top;">
+                    <i>[Sept 2021]</i>
+                  </td>
+                  <td style="padding: 5px; width: 85% ;vertical-align: top;">
+                    Received $43,000 AWS cloud credit for research.
                   </td>
                 </tr>
                 <tr>
@@ -102,11 +118,211 @@
             <td style="padding:20px;width:100%;vertical-align:middle">
             <h1>Research</h1>
               <p>
-                I'm interested in deep reinforcement learning, deep learning, and robotics.
+                I split my research into two buckets: robotic learning and deep reinforcement learning (RL).
+                At the moment, I particularly interested in control quadrotor swarms to navigate in complex environments based on limited compute resource.
+                Toward this goal, I am working on curriculum learning, sim-to-real transfer, representations of environment, and building a customized simulator to help my research.
+                I am also working on investigating the relationship between the performance and model size, and explore better on-policy algorithm than PPO.
               </p>
             </td>
           </tr>
+        </tbody>
+        </table>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+            <td style="padding:20px;width:100%;vertical-align:middle">
+            <h2>Robotic Learning</h2>
+              <p>
+                At the moment, my main research problem is to control quadrotor swarms to navigate in complex environments based on limited compute resource.
+              </p>
+            <h3>Conference</h3>
+            </td>
+          </tr>
         </tbody></table>
+
+
+
+              <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+        <!--3. 	HyperPPO: A scalable method for finding small policies for robotic control        -->
+          <tr onmouseout="hyperppo_stop()" onmouseover="hyperppo_start()">
+            <td style="padding:20px; padding-top:10px; padding-right:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='hyperppo_image' style="opacity: 0;" >
+                    <video width="160" muted autoplay loop>
+                        <source src="images/hyperppo/hyperppo.png" type="image/png">
+                        " Your browser does not support the video tag. "
+                    </video>
+                </div>
+                <img src='images/hyperppo/hyperppo.png' width="160" height="160">
+              </div>
+              </div>
+              <script type="text/javascript">
+                function hyperppo_start() {
+                  document.getElementById('hyperppo_image').style.opacity = "1";
+                }
+
+                function hyperppo_stop() {
+                  document.getElementById('hyperppo_image').style.opacity = "0";
+                }
+                hyperppo_stop()
+              </script>
+            </td>
+            <td style="padding:20px; width:85%;vertical-align:middle">
+              <a href="https://arxiv.org/abs/2309.16663">
+                <papertitle>HyperPPO: A scalable method for finding small policies for robotic control</papertitle>
+              </a>
+              <br>
+                            <a href="https://hegde95.github.io/">Shashank Hegde</a>,
+							<a href="https://zhehui-huang.github.io/">Zhehui Huang</a>,
+							<a href="https://viterbi.usc.edu/directory/faculty/Sukhatme/Gaurav">Gaurav Sukhatme</a>
+              <br>
+              <em>In Submission</em>
+              <br>
+              <a href="https://sites.google.com/usc.edu/hyperppo">webpage</a>
+              |
+              <a href="https://arxiv.org/abs/2309.16663">pdf</a>
+              <p></p>
+              <p>Investigate the relationship between the performance and model size.</p>
+            </td>
+          </tr>
+        </tbody></table>
+
+
+
+
+
+
+
+
+
+              <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+        <!--2. 	Collision Avoidance and Navigation for a Quadrotor Swarm Using End-to-end Deep Reinforcement Learning        -->
+          <tr onmouseout="drone_obst_stop()" onmouseover="drone_obst_start()">
+            <td style="padding:20px; padding-top:10px; padding-right:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='drone_obst_image' style="opacity: 0;" >
+                    <video width="160" muted autoplay loop>
+                        <source src="images/drone_obst/drone_obst.png" type="image/png">
+                        " Your browser does not support the video tag. "
+                    </video>
+                </div>
+                <img src='images/drone_obst/drone_obst.png' width="160" height="160">
+              </div>
+              </div>
+              <script type="text/javascript">
+                function drone_obst_start() {
+                  document.getElementById('drone_obst_image').style.opacity = "1";
+                }
+
+                function drone_obst_stop() {
+                  document.getElementById('drone_obst_image').style.opacity = "0";
+                }
+                drone_obst_stop()
+              </script>
+            </td>
+            <td style="padding:20px; width:85%;vertical-align:middle">
+              <a href="https://arxiv.org/abs/2309.13285">
+                <papertitle>Collision Avoidance and Navigation for a Quadrotor Swarm Using End-to-end Deep Reinforcement Learning</papertitle>
+              </a>
+              <br>
+							<a href="https://zhehui-huang.github.io/">Zhehui Huang</a>,
+              				<a href="https://scholar.google.com/citations?user=Olo1IfYAAAAJ&hl=en">Zhaojing Yang</a>,
+              				<a href="https://www.linkedin.com/in/rahulkrupani/">Rahul Krupani</a>,
+                         	<a href="https://scholar.google.com/citations?user=Ryg-OEoAAAAJ&hl=en">Baskın Şenbaşlar</a>,
+							<a href="https://www.linkedin.com/in/sumeetbatra/">Sumeet Batra</a>,
+							<a href="https://viterbi.usc.edu/directory/faculty/Sukhatme/Gaurav">Gaurav Sukhatme</a>
+              <br>
+              <em>In Submission</em>
+              <br>
+              <a href="https://sites.google.com/view/obst-avoid-swarm-rl">webpage</a>
+              |
+              <a href="https://arxiv.org/abs/2309.13285">pdf</a>
+              |
+              <a href="https://github.com/Zhehui-Huang/quad-swarm-rl">code</a>
+              <p></p>
+              <p>Learn end-to-end deep reinforcement learning policies to control quadrotor swarms to navigate in obstacle-rich environments.</p>
+            </td>
+          </tr>
+        </tbody></table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+        <!--1. 	Decentralized Control of Quadrotor Swarms with End-to-end Deep Reinforcement Learning        -->
+          <tr onmouseout="hypernerf_stop()" onmouseover="hypernerf_start()">
+            <td style="padding:20px; padding-top:10px; padding-right:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='hypernerf_image' style="opacity: 0;" >
+                    <video width="160" muted autoplay loop>
+                        <source src="images/videos/Scale_32_Static_Same_Goal.mp4" type="video/mp4">
+                        " Your browser does not support the video tag. "
+                    </video>
+                </div>
+                <img src='images/Scale_32_Static_Same_Goal.png' width="160">
+              </div>
+              </div>
+              <script type="text/javascript">
+                function hypernerf_start() {
+                  document.getElementById('hypernerf_image').style.opacity = "1";
+                }
+
+                function hypernerf_stop() {
+                  document.getElementById('hypernerf_image').style.opacity = "0";
+                }
+                hypernerf_stop()
+              </script>
+            </td>
+            <td style="padding:20px; width:85%;vertical-align:middle">
+              <a href="https://arxiv.org/abs/2109.07735">
+                <papertitle>Decentralized Control of Quadrotor Swarms with End-to-end Deep Reinforcement Learning</papertitle>
+              </a>
+              <br>
+							<a href="https://www.linkedin.com/in/sumeetbatra/">Sumeet Batra*</a>,
+							<a href="https://zhehui-huang.github.io/">Zhehui Huang*</a>,
+							<a href="https://alex-petrenko.github.io/">Aleksei Petrenko*</a>,
+							<a href="https://www.linkedin.com/in/tushartk/">Tushar Kumar</a>, <br>
+							<a href="https://amolchanov86.github.io/">Artem Molchanov</a>,
+							<a href="https://viterbi.usc.edu/directory/faculty/Sukhatme/Gaurav">Gaurav Sukhatme</a>
+              <br>
+              <em>CoRL</em>, 2021
+              <br>
+              <a href="https://sites.google.com/view/swarm-rl">webpage</a>
+              |
+              <a href="https://arxiv.org/abs/2109.07735">pdf</a>
+              |
+              <a href="https://github.com/Zhehui-Huang/quad-swarm-rl">code</a>
+              <p></p>
+              <p>Trained policy based on self-built simulator <a href="https://github.com/Zhehui-Huang/quad-swarm-rl">quad-swarm-rl</a> , by using deep reinforcement learning and using sim-to-real transfer to deploy the policy on the real world quadrotors.</p>
+            </td>
+          </tr>
+        </tbody></table>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+            <td style="padding:20px;width:100%;vertical-align:middle">
+            <h3>Workshop</h3>
+            </td>
+          </tr>
+        </tbody></table>
+
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr onmouseout="hypernerf_stop()" onmouseover="hypernerf_start()">
       <td style="padding:20px; padding-top:10px; padding-right:20px;width:25%;vertical-align:middle">
@@ -156,101 +372,122 @@
         <a href="https://github.com/Zhehui-Huang/quad-swarm-rl">code</a>
         <p></p>
       </td>
-    </tr>
+    </tr></tbody></table>
 
-        <!--2. 	Decentralized Control of Quadrotor Swarms with End-to-end Deep Reinforcement Learning        -->
-          <tr onmouseout="hypernerf_stop()" onmouseover="hypernerf_start()">
-            <td style="padding:20px; padding-top:10px; padding-right:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='hypernerf_image' style="opacity: 0;" >
-                    <video width="160" muted autoplay loop>
-                        <source src="images/videos/Scale_32_Static_Same_Goal.mp4" type="video/mp4">
-                        " Your browser does not support the video tag. "
-                    </video>
-                </div>
-                <img src='images/Scale_32_Static_Same_Goal.png' width="160">
-              </div>
-              </div>
-              <script type="text/javascript">
-                function hypernerf_start() {
-                  document.getElementById('hypernerf_image').style.opacity = "1";
-                }
 
-                function hypernerf_stop() {
-                  document.getElementById('hypernerf_image').style.opacity = "0";
-                }
-                hypernerf_stop()
-              </script>
-            </td>
-            <td style="padding:20px; width:85%;vertical-align:middle">
-              <a href="https://arxiv.org/abs/2109.07735">
-                <papertitle>Decentralized Control of Quadrotor Swarms with End-to-end Deep Reinforcement Learning</papertitle>
-              </a>
-              <br>
-							<a href="https://www.linkedin.com/in/sumeetbatra/">Sumeet Batra*</a>,
-							<a href="https://zhehui-huang.github.io/">Zhehui Huang*</a>,
-							<a href="https://alex-petrenko.github.io/">Aleksei Petrenko*</a>,
-							<a href="https://www.linkedin.com/in/tushartk/">Tushar Kumar</a>, <br>
-							<a href="https://amolchanov86.github.io/">Artem Molchanov</a>,
-							<a href="https://viterbi.usc.edu/directory/faculty/Sukhatme/Gaurav">Gaurav Sukhatme</a>
-              <br>
-              <em>CoRL</em>, 2021
-              <br>
-              <a href="https://sites.google.com/view/swarm-rl">webpage</a>
-              |
-              <a href="https://arxiv.org/abs/2109.07735">pdf</a>
-              |
-              <a href="https://github.com/Zhehui-Huang/quad-swarm-rl">code</a>
-              <p></p>
-              <p>Trained policy based on self-built simulator <a href="https://github.com/Zhehui-Huang/quad-swarm-rl">quad-swarm-rl</a> , by using deep reinforcement learning and using sim-to-real transfer to deploy the policy on the real world quadrotors.</p>
-            </td>
-          </tr>
+    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+        <tr>
+        <td style="padding:20px;width:100%;vertical-align:middle">
+        <h2>Deep Reinforcement Learning</h2>
+          <p>
+            At the moment, my main research problem is exploring better on-policy algorithm than PPO.
+          </p>
+        <h3>Conference</h3>
+        </td>
+      </tr>
+    </tbody></table>
+
+    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+        <!--2. FixPO-->
+        <tr onmouseout="fixpo_stop()" onmouseover="fixpo_start()">
+          <td style="padding:20px; padding-top:10px; width:25%;vertical-align:middle">
+            <div class="one">
+              <div class="two" id='fixpo_image' style="opacity: 0;" >
+                  <video width="160" muted autoplay loop>
+                      <source src="images/FixPO/fixpo_algo.png" type="image/png">
+                      " Your browser does not support the video tag. "
+                  </video>
+              </div>
+              <img src='images/FixPO/fixpo_algo.png' width="160" height="160">
+            </div>
+            <script type="text/javascript">
+              function fixpo_start() {
+                document.getElementById('fixpo_image').style.opacity = "1";
+              }
+
+              function fixpo_stop() {
+                document.getElementById('fixpo_image').style.opacity = "0";
+              }
+              fixpo_stop()
+            </script>
+          </td>
+          <td style="padding:20px;width:75%;vertical-align:middle">
+            <a href="https://arxiv.org/abs/2006.11751">
+              <papertitle>Guaranteed Trust Region Optimization via Two-Phase KL Penalization</papertitle>
+            </a>
+            <br>
+                          <a href="https://zentner.io/">K.R. Zentner</a>,
+                          <a href="https://scholar.google.com/citations?user=6MUY5mgAAAAJ&hl=en"></a>,
+                          <a href="https://zhehui-huang.github.io/">Zhehui Huang</a>,
+                          <a href="https://viterbi.usc.edu/directory/faculty/Sukhatme/Gaurav">Gaurav Sukhatme</a><br>
+            <br>
+            <em>In Submission</em>
+            <br>
+            <a href="https://arxiv.org/abs/2312.05405">pdf</a>
+            <p></p>
+            <p>In this work we have shown how FixPO is able to combine the guarantees of trust region methods with the computational
+              efficiency and rewards of proximal methods. FixPO enforces its trust region via KL penalization, which is flexible and
+              well understood in the machine learning community. In future work, we would like to extend our work to a multi-task setting.</p>
+          </td>
+        </tr>
+
+
         <!--1. Sample-Factory-->
-          <tr onmouseout="nerfactor_stop()" onmouseover="nerfactor_start()">
-            <td style="padding:20px; padding-top:10px; width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='nerfactor_image' style="opacity: 0;" >
-                    <video width="160" muted autoplay loop>
-                        <source src="images/videos/battle.mp4" type="video/mp4">
-                        " Your browser does not support the video tag. "
-                    </video>
-                </div>
-                <img src='images/battle_init.png' width="160">
+        <tr onmouseout="nerfactor_stop()" onmouseover="nerfactor_start()">
+          <td style="padding:20px; padding-top:10px; width:25%;vertical-align:middle">
+            <div class="one">
+              <div class="two" id='nerfactor_image' style="opacity: 0;" >
+                  <video width="160" muted autoplay loop>
+                      <source src="images/videos/battle.mp4" type="video/mp4">
+                      " Your browser does not support the video tag. "
+                  </video>
               </div>
-              <script type="text/javascript">
-                function nerfactor_start() {
-                  document.getElementById('nerfactor_image').style.opacity = "1";
-                }
+              <img src='images/battle_init.png' width="160">
+            </div>
+            <script type="text/javascript">
+              function nerfactor_start() {
+                document.getElementById('nerfactor_image').style.opacity = "1";
+              }
 
-                function nerfactor_stop() {
-                  document.getElementById('nerfactor_image').style.opacity = "0";
-                }
-                nerfactor_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://arxiv.org/abs/2006.11751">
-                <papertitle>Sample Factory: Egocentric 3D Control from Pixels at 100000 FPS with Asynchronous Reinforcement Learning</papertitle>
-              </a>
-              <br>
-							<a href="https://alex-petrenko.github.io/">Aleksei Petrenko</a>,
-							<a href="https://zhehui-huang.github.io/">Zhehui Huang</a>,
-							<a href="https://www.linkedin.com/in/tushartk/">Tushar Kumar</a>,
-							<a href="https://viterbi.usc.edu/directory/faculty/Sukhatme/Gaurav">Gaurav Sukhatme</a><br>
-                            <a href="http://vladlen.info/">Vladlen Koltun</a>
-              <br>
-              <em>ICML</em>, 2020
-              <br>
-              <a href="https://sites.google.com/view/sample-factory">webpage</a>
-              |
-              <a href="https://arxiv.org/abs/2006.11751">pdf</a>
-              |
-              <a href="https://github.com/alex-petrenko/sample-factory">code</a>
-              <p></p>
-              <p>Sample Factory is the fastest open source single-machine RL implementations (see paper for details). If you plan to train RL agents on large amounts of experience, consider using it. Sample Factory can significantly speed up the experimentation or allow you to collect more samples in the same amount of time and achieve better performance.</p>
-            </td>
-          </tr>
-        </tbody></table>
+              function nerfactor_stop() {
+                document.getElementById('nerfactor_image').style.opacity = "0";
+              }
+              nerfactor_stop()
+            </script>
+          </td>
+          <td style="padding:20px;width:75%;vertical-align:middle">
+            <a href="https://arxiv.org/abs/2006.11751">
+              <papertitle>Sample Factory: Egocentric 3D Control from Pixels at 100000 FPS with Asynchronous Reinforcement Learning</papertitle>
+            </a>
+            <br>
+                          <a href="https://alex-petrenko.github.io/">Aleksei Petrenko</a>,
+                          <a href="https://zhehui-huang.github.io/">Zhehui Huang</a>,
+                          <a href="https://www.linkedin.com/in/tushartk/">Tushar Kumar</a>,
+                          <a href="https://viterbi.usc.edu/directory/faculty/Sukhatme/Gaurav">Gaurav Sukhatme</a><br>
+                          <a href="http://vladlen.info/">Vladlen Koltun</a>
+            <br>
+            <em>ICML</em>, 2020
+            <br>
+            <a href="https://sites.google.com/view/sample-factory">webpage</a>
+            |
+            <a href="https://arxiv.org/abs/2006.11751">pdf</a>
+            |
+            <a href="https://github.com/alex-petrenko/sample-factory">code</a>
+            <p></p>
+            <p>Sample Factory is the fastest open source single-machine RL implementations (see paper for details). If you plan to train RL agents on large amounts of experience, consider using it. Sample Factory can significantly speed up the experimentation or allow you to collect more samples in the same amount of time and achieve better performance.</p>
+          </td>
+        </tr>
+  </tbody></table>
+
+
+
+
+
+
+
+
+
+
         <hr>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           <tr>
