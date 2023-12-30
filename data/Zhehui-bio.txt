@@ -1,4 +1,4 @@
-Zhehui Huang is a first-year Computer Science Ph.D. Student at the University of Southern California, where he works on
+Zhehui Huang is a third-year Computer Science Ph.D. Student at the University of Southern California, where he works on
 deep reinforcement learning and robotics, and advised by Prof. Gaurav Sukhatme. He received a Master's degree in Computer Science
 from the University of Southern California in 2021, and he received a Bachelor's degree in Computer Science from the
 Harbin Institute of Technology in 2019. He received a Viterbi Master Award (Best Research) from the University of Southern California in 2021.
