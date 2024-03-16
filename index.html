@@ -214,11 +214,6 @@
 
 
 
-
-
-
-
-
               <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
         <!--2. 	Collision Avoidance and Navigation for a Quadrotor Swarm Using End-to-end Deep Reinforcement Learning        -->
           <tr onmouseout="drone_obst_stop()" onmouseover="drone_obst_start()">
@@ -268,21 +263,6 @@
             </td>
           </tr>
         </tbody></table>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -507,10 +487,68 @@
         </tr>
   </tbody></table>
 
+        .
 
 
 
 
+
+    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+        <tr>
+        <td style="padding:20px;width:100%;vertical-align:middle">
+        <h2>Foundation Models</h2>
+          <p>
+            At the moment, my main research problem is investigating LLMs for robotics.
+          </p>
+        <h3>Conference</h3>
+        </td>
+      </tr>
+    </tbody></table>
+
+    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+        <!--2. FixPO-->
+        <tr onmouseout="word_to_routes_stop()" onmouseover="word_to_routes_start()">
+          <td style="padding:20px; padding-top:10px; width:25%;vertical-align:middle">
+            <div class="one">
+              <div class="two" id='word_to_routes_image' style="opacity: 0;" >
+                  <video width="160" muted autoplay loop>
+                      <source src="images/words_to_routes/Overview.png" type="image/png">
+                      " Your browser does not support the video tag. "
+                  </video>
+              </div>
+              <img src='images/words_to_routes/Overview.png' width="160" height="160">
+            </div>
+            <script type="text/javascript">
+              function word_to_routes_start() {
+                document.getElementById('word_to_routes_image').style.opacity = "1";
+              }
+
+              function word_to_routes_stop() {
+                document.getElementById('word_to_routes_image').style.opacity = "0";
+              }
+              word_to_routes_stop()
+            </script>
+          </td>
+          <td style="padding:20px;width:75%;vertical-align:middle">
+            <a href="https://drive.google.com/file/d/1p98zOkxk6X_Go9K4QOYdN56fvqjoFLDG/view?usp=sharing">
+              <papertitle>From Words to Routes: Applying Large Language Models to Vehicle Routing</papertitle>
+            </a>
+            <br>
+                <a href="https://zhehui-huang.github.io/" style="color: #FF5733;"><b>Zhehui Huang</b></a>,
+                <a href="https://guangyaoshi.github.io/"><b>Guangyao Shi</b></a>,
+                <a href="https://viterbi.usc.edu/directory/faculty/Sukhatme/Gaurav">Gaurav Sukhatme</a><br>
+            <br>
+            <em>In Submission</em><br>
+            <br>
+            <a href="https://sites.google.com/view/words-to-routes/">webpage</a>
+            |
+            <a href="https://drive.google.com/file/d/1p98zOkxk6X_Go9K4QOYdN56fvqjoFLDG/view?usp=sharing">pdf</a>
+            <p></p>
+            <p>In this work, we investigate LLMs for vehicle routing problems. We construct a dataset that can be used as a benchmark
+for LLMs in vehicle routing problems. We propose a framework with self-debugging and self-verification. We show GPT-4 outperforms Claude 3 Opus, and Gemini 1.0 Pro</p>
+          </td>
+        </tr>
+  </tbody></table>
 
 
 
@@ -530,6 +568,13 @@
       </td>
     </tr>
   </table>
+
+
+
+
 </body>
+
+
+
 
 </html>
