@@ -514,7 +514,7 @@
         <td style="padding:20px;width:100%;vertical-align:middle">
         <h2>Foundation Models</h2>
           <p>
-            At the moment, my main research problem is investigating LLMs for robotics.
+            At the moment, my main research problem is investigating LLMs for multiple robots and LLMs for complex reasoning.
           </p>
         <h3>Conference</h3>
         </td>
@@ -522,7 +522,7 @@
     </tbody></table>
 
     <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-        <!--2. FixPO-->
+        <!--1. words_to_routes-->
         <tr onmouseout="word_to_routes_stop()" onmouseover="word_to_routes_start()">
           <td style="padding:20px; padding-top:10px; width:25%;vertical-align:middle">
             <div class="one">
@@ -571,7 +571,58 @@ for LLMs in vehicle routing problems. We propose a framework with self-debugging
   </tbody></table>
 
 
+    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+        <!--2. dsbench-->
+        <tr onmouseout="dsbench_stop()" onmouseover="dsbench_start()">
+          <td style="padding:20px; padding-top:10px; width:25%;vertical-align:middle">
+            <div class="one">
+              <div class="two" id='dsbench_image' style="opacity: 0;" >
+                  <video width="160" muted autoplay loop>
+                      <source src="images/dsbench/Overview.png" type="image/png">
+                      " Your browser does not support the video tag. "
+                  </video>
+              </div>
+              <img src='images/dsbench/Overview.png' width="160" height="160">
+            </div>
+            <script type="text/javascript">
+              function dsbench_start() {
+                document.getElementById('dsbench_image').style.opacity = "1";
+              }
 
+              function dsbench_stop() {
+                document.getElementById('dsbench_image').style.opacity = "0";
+              }
+              dsbench_stop()
+            </script>
+          </td>
+          <td style="padding:20px;width:75%;vertical-align:middle">
+            <a href="https://arxiv.org/pdf/2409.07703">
+              <papertitle>DSBench: How Far Are Data Science Agents to Becoming Data Science Experts?</papertitle>
+            </a>
+            <br>
+                <a href="https://liqiangjing.github.io/">Liqiang Jing</a>,
+                <a href="https://zhehui-huang.github.io/" style="color: #FF5733;"><b>Zhehui Huang</b></a>,
+                <a href="https://scholar.google.com/citations?user=EeppWmkAAAAJ&hl=en">Xiaoyang Wang</a>,
+                <a href="https://wenlinyao.github.io/">Wenlin Yao</a>,
+                <a href="https://wyu97.github.io/">Wenhao Yu</a>,
+                <a href="https://mayer123.github.io/">Kaixin Ma</a>,
+                <a href="https://panda0881.github.io/Hongming_Homepage/">Hongming Zhang</a>,
+                <a href="https://xinyadu.github.io/">Xinya Du</a>,
+                <a href="https://sites.google.com/view/dongyu888/">Dong Yu</a>
+            <br>
+            <br>
+            <em>In Submission</em><br>
+            <br>
+            <a href="https://arxiv.org/pdf/2409.07703">pdf</a>
+            |
+            <a href="https://github.com/liqiangjing/dsbench">code</a>
+            <p></p>
+            <p>
+              Recently, many data science benchmarks have been proposed to investigate their performance in the data science domain. However, existing data science benchmarks still fall short when compared to real-world data science applications due to their simplified settings. To bridge this gap, we introduce DSBench, a comprehensive benchmark designed to evaluate data science agents with realistic tasks.
+            </p>
+          </td>
+        </tr>
+  </tbody></table>
 
 
         <hr>
